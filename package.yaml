@@ -1,0 +1,27 @@
+name:                baseunits
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/zerosum/baseunits#readme
+license:             NONE
+author:              zerosum
+maintainer:          info@zerosum.dev
+copyright:           2021 zerosum
+category:            none
+extra-source-files:
+- README.md
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  spec:
+    main: Tasty.hs
+    source-dirs: test
+    dependencies:
+    - baseunits
+    - tasty
+    - tasty-hunit
